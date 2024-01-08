@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Made by Nandita!</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+
+        <h3>Add More Data!</h3>
+        
+        <form action="/inventory/create" method="post">
+            <div class="form-group">
+                <label for="">Macaron</label>
+                <input type="text" name="macaron" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Jumlah</label>
+                <input type="number" name="jumlah" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Harga Satuan</label>
+                <input type="number" name="harga_satuan" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Lokasi</label>
+                <select name="lokasi" class="form-control">
+                    <option value="">Pilih</option>
+                    <option value="1">Bandung</option>
+                    <option value="2">Jakarta</option>
+                    <option value="3">Denpasar</option>
+                    <option value="4">Manokwari</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Deskripsi</label>
+                <input type="textarea" name="deskripsi" class="form-control">
+            </div>
+        </form>
+        <a href="/inventory" class="btn btn-sm btn-primary">View Data</a>
+        <button class="btn btn-sm btn-primary" type="submit">Save</button>
+    </div>
+ </body>
+</html>
